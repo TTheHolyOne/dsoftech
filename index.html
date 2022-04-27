@@ -6,10 +6,28 @@
   <meta name="viewport" content="width=device-width">
   <title>Terminal</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="code.jpg" type="image/x-icon" />
 </head>
 
 <body>
-  Hello User
+<div id="main">
+  > Unknown User Detected<br/>
+  > Enter Password<br/>
+  > <input id="text" minlength="1" maxlength="6"autocomplete="off"autofocus="on"placeholder="Type Here"></input><button onclick="getVal()">Set</button><br/>
+</div>
+   <span id="work" style="display:none;">
+	   > Password Correct<br/><br/>
+	   <button id="start" onclick="start()">Start Simulation</button>
+   </span>
+	<span id="wrong" style="display:none">
+		> Password Incorrect<br/>
+		<button id="restart" onclick="restart()">Try Again</button>
+	</span>
+	<div id="types" style="display:none;">
+		> Directory<br/>
+		<button>Hacking</button><br/>
+		<button>Cracking</button><br/>
+	</div>
   <script src="script.js"></script>
 </body>
 
