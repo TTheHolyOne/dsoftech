@@ -60,3 +60,6 @@ button {
 button:onhover {
 	cursor:crosshair;
 }
+a {
+	color:lime;
+}
