@@ -2,41 +2,45 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Terminal</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-<link rel="icon" href="code.jpg" type="image/x-icon" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Terminal</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="code.jpg" type="image/x-icon" />
 </head>
 
 <body>
-<div id="main">
-  > Unknown User Detected<br/>
-  > Enter Password<br/>
-  > <input id="text" minlength="1" maxlength="6"autocomplete="off"autofocus="on"placeholder="Type Here"></input><button onclick="getVal()">Set</button><br/>
-</div>
-   <span id="work" style="display:none;">
-	   > Password Correct<br/><br/>
-	   <button id="start" onclick="start()">Start Simulation</button>
-   </span>
+	<div id="main">
+		> Unknown User Detected<br />
+		> Enter Password<br />
+		> <input id="text" minlength="1" maxlength="6" autocomplete="off" autofocus="on"
+			placeholder="Type Here"></input><button onclick="getVal()">Set</button><br />
+	</div>
+	<span id="work" style="display:none;">
+		> Password Correct<br /><br />
+		<button id="start" onclick="start()">Start Simulation</button>
+	</span>
 	<span id="wrong" style="display:none">
-		> Password Incorrect<br/>
+		> Password Incorrect<br />
 		<button id="restart" onclick="restart()">Try Again</button>
 	</span>
 	<div id="types" style="display:none;">
-		> Directory<br/>
-		<button id="hackingbutton" onclick="hackingg()">Hacking</button><br/>
-		<button id="crackingbutton" onclick="crackingg()">Cracking</button><br/>
+		> Directory<br />
+		<button id="hackingbutton" onclick="hackingg()">Hacking</button><br />
+		<button id="crackingbutton" onclick="crackingg()">Cracking</button><br />
+		<button id="ddosbutton" onclick="ddosingg()">DDoSing</button><br /> <button id="doxbutton"
+			onclick="doxingg()">Doxing</button><br />
+		<button id="programmingbutton" onclick="programmingg()">Programming</button><br />
 	</div>
-	<div id="hacking"style="display:none;">
-		> <a onclick="back()"href="#">Directory</a>/Hacking<br/>
-		<button>What is Hacking?</button><br/>
+	<div id="hacking" style="display:none;">
+		> <a onclick="back()" href="#">Directory</a>/Hacking<br />
+		<button>What is Hacking?</button><br />
 	</div>
 	<div id="cracking" style="display:none;">
-		> <a onclick="back()"href="#">Directory</a>/Cracking<br/>
-		<button>What is Cracking?</button><br/>
+		> <a onclick="back()" href="#">Directory</a>/Cracking<br />
+		<button>What is Cracking?</button><br />
 	</div>
-  <script src="script.js"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
