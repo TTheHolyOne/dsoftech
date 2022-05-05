@@ -14,7 +14,7 @@
 		> Unknown User Detected<br />
 		> Enter Password<br />
 		> <input id="text" minlength="1" maxlength="6" autocomplete="off" autofocus="on"
-			placeholder="Type Here"></input><button onclick="getVal()">Set</button><br />
+			placeholder="Type Here"></input><button onclick="getVal()">Set</button><br /><sub>hint: 010101</sub>
 	</div>
 	<span id="work" style="display:none;">
 		> Password Correct<br /><br />
@@ -34,24 +34,41 @@
 	</div>
 	<div id="hacking" style="display:none;">
 		> <a onclick="back()" href="#">Directory</a>/Hacking<br />
-		<button>What is Hacking?</button><br />
+		<a onclick="document.getElementById('hacking').style.display = 'none';document.getElementById('abouthacking').style.display = 'block';"><button onclick="document.getElementById('hacking').style.display = 'none';document.getElementById('abouthacking').style.display = 'block';">>What is Hacking?</button></a><br />
 	</div>
-		<div id="programming" style="display:none;">
+	<div id="abouthacking" style="display:none;">
+		> <a onclick="back()" href="#">Directory</a>/<a href="#"onclick="document.getElementById('hacking').style.display = 'block';document.getElementById('abouthacking').style.display = 'none';">Hacking</a>/About<br />
+<br/>
+	</div>
+	
+	<div id="programming" style="display:none;">
 		> <a onclick="back()" href="#">Directory</a>/Programming<br />
-		<button>What is Programming?</button><br />
+		<button onclick="document.getElementById('programming').style.display = 'none';document.getElementById('aboutprogramming').style.display = 'block';">What is Programming?</button><br />
 	</div>
+<div id="aboutprogramming" style="display:none;">	
+> <a onclick="back()" href="#">Directory</a>/<a href="#"onclick="document.getElementById('programming').style.display = 'block';document.getElementById('aboutprogramming').style.display = 'none';">Programming</a>/About<br />
+</div>
 		<div id="doxing" style="display:none;">
 		> <a onclick="back()" href="#">Directory</a>/Doxing<br />
-		<button>What is Doxing?</button><br />
+		<button onclick="document.getElementById('doxing').style.display = 'none';document.getElementById('aboutdoxing').style.display = 'block';">What is Doxing?</button><br />
 	</div>
+<div id="aboutdoxing" style="display:none;">	
+> <a onclick="back()" href="#">Directory</a>/<a href="#"onclick="document.getElementById('doxing').style.display = 'block';document.getElementById('aboutdoxing').style.display = 'none';">Doxing</a>/About<br />
+</div>	
 		<div id="ddosing" style="display:none;">
 		> <a onclick="back()" href="#">Directory</a>/DDoSing<br />
-		<button>What is DDoSing?</button><br />
+		<button onclick="document.getElementById('ddosing').style.display = 'none';document.getElementById('aboutddosing').style.display = 'block';">What is DDoSing?</button><br />
 	</div>
+<div id="aboutddosing" style="display:none;">	
+> <a onclick="back()" href="#">Directory</a>/<a href="#"onclick="document.getElementById('ddosing').style.display = 'block';document.getElementById('aboutddosing').style.display = 'none';">DDoSing</a>/About<br />
+</div>		
 	<div id="cracking" style="display:none;">
 		> <a onclick="back()" href="#">Directory</a>/Cracking<br />
-		<button>What is Cracking?</button><br />
+		<button onclick="document.getElementById('cracking').style.display = 'none';document.getElementById('aboutcracking').style.display = 'block';">What is Cracking?</button><br />
 	</div>
+	<div id="aboutcracking" style="display:none;">	
+> <a onclick="back()" href="#">Directory</a>/<a href="#"onclick="document.getElementById('cracking').style.display = 'block';document.getElementById('aboutcracking').style.display = 'none';">Cracking</a>/About<br />
+</div>	
 	<script src="script.js"></script>
 </body>
 

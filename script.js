@@ -15,10 +15,29 @@ function crackingg() {
 	cracking.style.display = 'block';
 	types.style.display = 'none'
 }
-
+function programmingg() {
+	programming.style.display = 'block';
+	types.style.display = 'none'
+}
+function ddosingg() {
+	ddosing.style.display = 'block';
+	types.style.display = 'none'
+}
+function doxingg() {
+	doxing.style.display = 'block';
+	types.style.display = 'none'
+}
 function back() {
 	cracking.style.display = 'none';
 	hacking.style.display = 'none';
+	doxing.style.display = 'none';
+	ddosing.style.display = 'none';
+	programming.style.display = 'none';
+	abouthacking.style.display = 'none';
+	aboutcracking.style.display = 'none';
+	aboutdoxing.style.display = 'none';
+	aboutddosing.style.display = 'none';
+	aboutprogramming.style.display = 'none';
 	types.style.display = 'block';
 	return false;
 }
